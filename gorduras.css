@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    height: 700px; /* Altura fixa para simular o quadrado */
+    background-color: #af6855;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .titulo {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 250px;
+    color: white;
+  }
+
+  .foto {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .foto img {
+    height: 500px;
+    border-radius: 8px;
+  }
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .info-texto {
+    flex: 1;
+  }
+  
+  .info-texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-texto p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .info-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .bloco-informativo {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .titulo-principal {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .paragrafo-titulo{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .linha-separadora {
+    border: none;
+    border-top: 2px solid #000000;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  
+  .subtitulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .paragrafos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .coluna-esquerda,
+  .coluna-direita {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .coluna-esquerda p,
+  .coluna-direita p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  
+  .sessao-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #af6855; /* cor de fundo do bloco inteiro */
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card button {
+    padding: 10px 20px;
+    background-color: #878937;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #5f6023;
+  }
+  .info-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .info-texto2 {
+    flex: 1;
+  }
+  
+  .info-texto2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-texto2 p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .info-imagem2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+
+  @media (max-width: 768px) {
+    /* Ajustando o container para telas menores */
+    .container {
+      height: auto; /* Remover a altura fixa para se adaptar ao conteúdo */
+      padding: 15px;
+    }
+  
+    /* Ajustando a logo */
+    .logo {
+      text-align: center;
+    }
+  
+    /* Ajustando a seção bottom */
+    .bottom-section {
+      flex-direction: column; /* Coloca os itens em coluna */
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .titulo {
+      font-size: 30px; /* Ajusta o tamanho do título */
+      margin-bottom: 20px; /* Ajusta a margem */
+    }
+  
+    .foto img {
+      height: 300px; /* Diminui a altura da imagem */
+      margin-bottom: 20px;
+    }
+  
+    /* Ajustando a info-section */
+    .info-section {
+      flex-direction: column; /* Coloca a info-section em coluna */
+      gap: 15px;
+    }
+  
+    .info-texto h2 {
+      font-size: 20px; /* Ajusta o tamanho do título */
+    }
+  
+    .info-texto p {
+      font-size: 14px; /* Ajusta o tamanho do texto */
+    }
+  
+    .info-imagem img {
+      max-width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    }
+  
+    /* Ajustando o bloco informativo */
+    .bloco-informativo {
+      margin: 20px 0;
+      padding: 0 10px; /* Ajusta o padding */
+    }
+  
+    .titulo-principal {
+      font-size: 22px; /* Reduz o tamanho do título */
+      margin-bottom: 10px;
+    }
+  
+    .paragrafo-titulo {
+      font-size: 14px; /* Ajusta o tamanho do texto */
+      margin-bottom: 15px;
+    }
+  
+    .linha-separadora {
+      width: 60%; /* Ajusta a largura da linha separadora */
+    }
+  
+    .subtitulo {
+      font-size: 18px; /* Ajusta o tamanho do subtítulo */
+    }
+  
+    .paragrafos-container {
+      flex-direction: column; /* Coloca os parágrafos em coluna */
+      align-items: center;
+      gap: 20px; /* Ajusta o espaço entre os itens */
+    }
+  
+    .coluna-esquerda, .coluna-direita {
+      flex: 1 1 100%; /* Garante que as colunas ocupem toda a largura */
+      margin-bottom: 20px;
+    }
+  
+    .coluna-esquerda p, .coluna-direita p {
+      font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+  
+    /* Ajustando os cards */
+    .sessao-cards {
+      flex-direction: column; /* Coloca os cards em coluna */
+      align-items: center; /* Centraliza os cards */
+      padding: 20px 10px;
+      gap: 20px; /* Ajusta o espaço entre os cards */
+    }
+  
+    .card {
+      width: 90%; /* Garante que os cards ocupem a largura máxima */
+      max-width: 350px; /* Limita a largura máxima */
+    }
+  
+    .card h4 {
+      font-size: 16px; /* Ajusta o tamanho do título do card */
+    }
+  
+    .card p {
+      font-size: 12px; /* Ajusta o tamanho da descrição do card */
+    }
+    
+    /* Ajustando info-section2 (segunda seção de informações) */
+    .info-section2 {
+      flex-direction: column; /* Coloca a info-section2 em coluna */
+      gap: 15px;
+    }
+  
+    .info-texto2 h2 {
+      font-size: 20px;
+    }
+  
+    .info-texto2 p {
+      font-size: 14px;
+    }
+  
+    .info-imagem2 img {
+      max-width: 100%;
+    }
+  }

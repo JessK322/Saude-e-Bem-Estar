@@ -1,0 +1,560 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    background-color: #878937;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .left-photo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin: 0 0 50px 0;
+    font-size: 4em;
+    color: white;
+  }
+
+  p {
+    margin: 0;
+    font-size: 2em;
+    max-width: 400px;
+    color: white;
+  }
+  .logo {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  .conteudo-abaixo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff; /* ou outro fundo se quiser separar visualmente */
+  }
+  
+  .conteudo-abaixo h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .conteudo-abaixo p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: black;
+  }
+  .bloco-inferior {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .bloco-inferior h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+  }
+  
+  .bloco-inferior p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    width: 200px;
+    padding-bottom: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card h5 {
+    font-size: 1em;
+    margin: 15px 0 10px;
+  }
+  
+  .card p {
+    padding: 0 15px;
+    font-size: 0.90em;
+    color: #333;
+  }
+  .bloco-duplo {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .bloco-duplo h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .bloco-duplo p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .duas-colunas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .item {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .item img {
+    width: auto;
+    height: 130px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .item h5 {
+    margin: 10px 0 8px;
+    font-size: 1.1em;
+  }
+  
+  .item p {
+    font-size: 0.95em;
+    color: #444;
+  }
+  .quadrado-final {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .lado-esquerdo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .lado-esquerdo h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .lado-esquerdo p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+  .lado-esquerdo h5 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .lado-direito {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .lado-direito img {
+    width: 600px;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+
+
+  /* Estilo para a seção de vídeo */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo cobrir toda a área da tela */
+    z-index: 1;
+    z-index: 1;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%; /* Posiciona a imagem no centro vertical */
+    left: 50%; /* Posiciona a imagem no centro horizontal */
+    transform: translate(-50%, -50%); /* Para centralizar a imagem de forma precisa */
+    opacity: 0.5; /* Define a opacidade da imagem */
+    z-index: 2;
+    width: 90%; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+/* Estilo geral para a seção */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.left-content {
+    width: 40%; /* Ajuste a largura do lado esquerdo */
+    color: white;
+}
+
+.left-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.left-content p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Efeito de zoom ao passar o cursor */
+.social-icon:hover {
+    transform: scale(1.1); /* Aplica o zoom de 10% */
+}
+
+.social-icon {
+    width: 40px; /* Ajuste o tamanho dos ícones */
+    height: 40px;
+}
+
+.right-content {
+    width: 55%; /* Ajuste a largura do lado direito */
+}
+
+.large-text {
+    font-size: 22px;
+    color: white;
+    margin-bottom:30px;
+}
+
+.small-text {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* Quadrado cobrindo a largura da tela */
+.content-section {
+    z-index: 2;
+    background-color: #878937; /* Cor do quadrado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px; /* Padding dentro do quadrado */
+}
+
+
+
+@media (max-width: 768px) {
+  /* Container principal */
+  .container {
+    flex-direction: column; /* Muda para coluna para melhor adaptação */
+    align-items: center; /* Centraliza os itens */
+    padding: 20px 10px;
+  }
+
+  /* Ajustando o layout da imagem à esquerda */
+  .left-photo {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+
+  .left-photo img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Ajustando o conteúdo à direita */
+  .right-content {
+    width: 100%; /* Deixa o conteúdo ocupar toda a largura */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  /* Tamanho da logo */
+  .logo {
+    width: 50%; /* Diminui o tamanho da logo */
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 2em; /* Ajusta o tamanho do título */
+    margin-right: 170px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.5em; /* Ajusta o tamanho da descrição */
+    max-width: 100%;
+    margin-right: 100px;
+  }
+
+  /* Conteúdo abaixo */
+  .conteudo-abaixo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .conteudo-abaixo h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin: auto;
+    margin-right: 10px;
+  }
+
+  .conteudo-abaixo p {
+    font-size: 1em;
+    margin: auto;
+    margin-right: 10px;
+
+  }
+
+  /* Bloco inferior */
+  .bloco-inferior {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .bloco-inferior h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .bloco-inferior p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  /* Cards responsivos */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%; /* Cards ocupando mais espaço */
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    height: 200px; /* Ajuste na altura das imagens */
+  }
+
+  /* Bloco duplo */
+  .bloco-duplo {
+    padding: 40px 20px;
+  }
+
+  .bloco-duplo h2 {
+    font-size: 1.8em;
+  }
+
+  .bloco-duplo p {
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  /* Duas colunas ajustadas */
+  .duas-colunas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .coluna {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .item img {
+    height: 120px; /* Ajusta a altura da imagem nos itens */
+  }
+
+  /* Ajustes no quadrado final */
+  .quadrado-final {
+    flex-direction: column; /* Muda a direção para coluna */
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .lado-esquerdo {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .lado-direito {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .lado-direito img {
+    width: 80%; /* Reduz a largura da imagem */
+    height: auto;
+  }
+
+  /* Seção de vídeo */
+  .video-section {
+    height: 200px; /* Reduz a altura do vídeo */
+  }
+
+  /* Overlay para o vídeo */
+  .overlay-image {
+    width: 80%; /* Ajusta o tamanho da imagem de sobreposição */
+  }
+
+  /* Seção de conteúdo */
+  .content-section {
+    flex-direction: column; /* Ajusta o conteúdo para coluna */
+    padding: 20px;
+    margin: auto;
+    margin-right: 10px;
+  }
+
+  .left-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-content h2 {
+    font-size: 1.8em;
+  }
+
+  .left-content p {
+    font-size: 1em;
+  }
+
+  /* Ajuste nos ícones sociais */
+  .social-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .right-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .large-text {
+    font-size: 1.5em;
+  }
+
+  .small-text {
+    font-size: 1em;
+  }
+}

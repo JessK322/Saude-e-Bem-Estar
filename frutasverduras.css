@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    height: 700px; /* Altura fixa para simular o quadrado */
+    background-color: #af6855;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .logo {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo da logo */
+  }
+
+  .logo img {
+    height: 50px; /* Reduz o tamanho da logo para se ajustar ao celular */
+    width: auto; /* Mantém a proporção original da logo */
+  }
+}
+
+
+  .bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .titulo {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 250px;
+    color: white;
+  }
+
+  .foto {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .foto img {
+    height: 500px;
+    border-radius: 8px;
+  }
+
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .bottom-section {
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 20px; /* Espaço inferior */
+  }
+
+  .titulo {
+    font-size: 32px; /* Reduz o tamanho da fonte para a seção de título */
+    margin-bottom: 20px; /* Ajuste no espaçamento abaixo do título */
+  }
+
+  .foto {
+    margin-bottom: 20px; /* Ajusta o espaçamento abaixo da foto */
+  }
+
+  .foto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    max-height: 400px; /* Limita a altura máxima da imagem */
+    object-fit: cover; /* Garante que a imagem seja recortada proporcionalmente, se necessário */
+    border-radius: 8px; /* Mantém os cantos arredondados */
+  }
+}
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .info-texto {
+    flex: 1;
+  }
+  
+  .info-texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-texto p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .info-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os itens */
+    padding: 10px; /* Ajusta o padding */
+  }
+
+  .info-texto {
+    flex: 1;
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 20px; /* Espaço inferior */
+  }
+
+  .info-texto h2 {
+    font-size: 20px; /* Reduz o tamanho da fonte do título */
+    margin-bottom: 10px; /* Ajuste no espaçamento abaixo do título */
+  }
+
+  .info-texto p {
+    font-size: 10px; /* Reduz o tamanho da fonte do parágrafo */
+    color: #444;
+    margin-right: 10px;
+    line-height: 1; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+  }
+
+  .info-imagem {
+    width: 50%;
+    margin-top: 10px; /* Adiciona um espaço acima da imagem */
+  }
+
+  .info-imagem img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    max-height: 300px; /* Limita a altura máxima da imagem */
+    object-fit: cover; /* Garante que a imagem seja recortada proporcionalmente, se necessário */
+    border-radius: 8px; /* Mantém os cantos arredondados */
+  }
+}
+
+  .bloco-informativo {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .titulo-principal {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .paragrafo-titulo{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .linha-separadora {
+    border: none;
+    border-top: 2px solid #000000;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  
+  .subtitulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .paragrafos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .coluna-esquerda,
+  .coluna-direita {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .coluna-esquerda p,
+  .coluna-direita p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+  .bloco-informativo {
+    padding: 0 15px; /* Reduz o padding para celulares */
+    margin: 20px 0; /* Ajuste na margem */
+  }
+
+  .titulo-principal {
+    font-size: 18px; /* Reduz o tamanho do título */
+    margin-bottom: 10px; /* Ajusta o espaçamento inferior */
+    text-align: center; /* Centraliza o título */
+  }
+
+  .paragrafo-titulo {
+    font-size: 14px; /* Reduz o tamanho da fonte para comprimir o texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 10px; /* Reduz a margem inferior */
+    padding: 0; /* Remove qualquer padding extra */
+    margin-right: 100px;
+  }
+  .linha-separadora {
+    width: 60%; /* Reduz a largura da linha separadora */
+    margin: 20px auto; /* Centraliza a linha separadora */
+  }
+
+  .subtitulo {
+    font-size: 18px; /* Reduz o tamanho do subtítulo */
+    margin-bottom: 15px; /* Ajuste no espaçamento inferior */
+    text-align: center; /* Centraliza o subtítulo */
+  }
+
+  .paragrafos-container {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os itens */
+    gap: 20px; /* Ajuste no espaçamento entre os itens */
+  }
+
+  .coluna-esquerda, .coluna-direita {
+    flex: 1 1 50%; /* Faz com que as colunas ocupem 100% da largura disponível */
+    max-width: 50%; /* Garante que as colunas não ultrapassem a largura da tela */
+    padding: 0; /* Remove qualquer padding extra */
+  }
+
+  .coluna-esquerda h4, .coluna-direita h4 {
+    font-size: 18px; /* Ajusta o tamanho da fonte dos subtítulos */
+    text-align: center;
+  }
+
+  .coluna-esquerda p, .coluna-direita p {
+    font-size: 14px; /* Reduz o tamanho da fonte dos parágrafos */
+    color: #444; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+  }
+}
+
+
+  .sessao-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #af6855; /* cor de fundo do bloco inteiro */
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+
+/* Ajuste para a seção de cards em dispositivos móveis */
+@media (max-width: 768px) {
+  .sessao-cards {
+    flex-direction: column; /* Alinha os cards em uma coluna */
+    align-items: center; /* Centraliza os cards */
+    padding: 20px 10px; /* Ajusta o padding para um melhor ajuste */
+  }
+  
+  .card {
+    width: 90%; /* Ajusta a largura do card para 90% da tela */
+    max-width: 400px; /* Define um limite para a largura do card */
+    margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+    padding: 15px; /* Reduz o padding dentro do card */
+  }
+  
+  .card h4 {
+    font-size: 16px; /* Reduz o tamanho da fonte do título do card */
+  }
+  
+  .card p {
+    font-size: 12px; /* Reduz o tamanho da fonte do texto no card */
+  }
+}
+
+  .card button {
+    padding: 10px 20px;
+    background-color: #878937;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #5f6023;
+  }
+  

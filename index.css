@@ -1,0 +1,617 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-image: url('img/imagem inicio.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    width: 100%;
+}
+
+/* Logo no cabeçalho */
+.logo img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 60px;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 150px; /* Reduz um pouco a altura no mobile */
+        background-position: center top; /* Foca mais o topo da imagem */
+    }
+
+    .logo img {
+        top: 10px;
+        left: 10px;
+        height: 40px; /* Reduz o tamanho da logo */
+    }
+}
+
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container para o conteúdo */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+
+/* Estilo para o quadrado vermelho */
+.red-box {
+    background-color: #af6855;
+    color: white;
+    width: 100%; /* Faz o quadrado cobrir toda a largura da tela */
+    max-width: 1200px; /* Limita a largura máxima */
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative; /* Para poder posicionar a foto e a data em relação ao quadrado */
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Organiza o conteúdo horizontalmente */
+    justify-content: space-between; /* Garante que o conteúdo esteja bem distribuído */
+    align-items: center;
+}
+
+/* Estilo para o título e parágrafo dentro do quadrado vermelho */
+.red-box .content {
+    flex: 1; /* Faz o conteúdo (texto) ocupar o maior espaço possível */
+    margin-right: 20px; /* Espaçamento entre o texto e a foto */
+}
+
+.red-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.red-box p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .red-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .red-box .content {
+        margin-right: 0;
+    }
+
+    .photo img {
+        width: 80%;
+    }
+
+    .date-time {
+        position: static;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+
+/* Estilo para o container de data e hora */
+.date-time {
+    color: #af6855; /* Cor do texto */
+    z-index: 2;
+    position: absolute; /* Posiciona a data/hora de forma absoluta */
+    top: 115px; /* Distância do topo do quadrado */
+    right: 10px; /* Distância da borda direita */
+    white-space: normal; /* Permite quebra de linha no texto */
+    word-wrap: break-word; /* Quebra palavras longas quando necessário */
+    font-size: 12px; /* Tamanho do texto */
+    padding: 5px 10px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo com transparência */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Container para a foto (flor) */
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Para que a imagem da flor fique abaixo da data/hora */
+    z-index: 0;
+    animation: moveFlower 4s ease-in-out infinite; /* Animação para mover a flor */
+}
+
+/* Estilo para a foto */
+.photo img {
+    width: 60%; /* Ajuste o tamanho da flor para um tamanho pequeno */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+/* Animação para mover a flor de um lado para o outro */
+@keyframes moveFlower {
+    0% {
+        transform: translateX(0); /* Começa na posição original */
+    }
+    50% {
+        transform: translateX(10px); /* Move 20px para a direita */
+    }
+    100% {
+        transform: translateX(0); /* Volta para a posição original */
+    }
+}
+/* Container para o novo conteúdo */
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f7f7f7; /* Cor de fundo para destacar a área */
+    border-radius: 8px;
+}
+
+/* Estilo para a imagem à esquerda */
+.image-left img {
+    width: 100%; /* Ajusta a largura da imagem (pode ser ajustado conforme necessário) */
+    border-radius: 8px;
+}
+
+/* Estilo para o conteúdo à direita */
+.content-right {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+    margin-left: 10px; /* Espaçamento entre a imagem e o conteúdo */
+}
+
+.content-right h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-right p {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+/* Estilo para o botão */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #af6855; /* Cor de fundo do botão */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #9b5b42; /* Cor do botão quando hover */
+}
+
+
+@media (max-width: 768px) {
+    /* Empilha os itens verticalmente */
+    .content-box {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .image-left {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .image-left img {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    .content-right {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .content-right h3 {
+      font-size: 20px;
+    }
+  
+    .content-right p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  }
+
+
+/* Estilo para o container geral */
+.activities-container {
+    width: 100%;
+    background-color: #878937; /* Cor de fundo para destacar */
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Título e parágrafo centralizado */
+.title-section {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.title-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.title-section p {
+    font-size: 16px;
+}
+
+/* Seção com as imagens de atividades */
+.icons-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para as imagens */
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Estilo para os ícones de atividades */
+.icon {
+    text-align: center;
+    background-color: #949544;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Tamanho das imagens */
+.icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Título e mini parágrafo abaixo de cada ícone */
+.icon h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white
+}
+/* Link para a página de atividades */
+.icon a {
+    text-decoration: none;
+}
+/* Estilo geral para a seção */
+.section {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+/* Estilo para título e parágrafo */
+.title-and-description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.title-and-description h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.title-and-description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.small-image {
+    width: 10%; /* Ajuste o tamanho da imagem */
+    margin-left: 20px;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .title-and-description {
+        flex-direction: column; /* Organiza o conteúdo verticalmente */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .text-content {
+        width: 100%; /* Faz o texto ocupar toda a largura disponível */
+        margin-bottom: 20px; /* Adiciona espaçamento abaixo do texto */
+    }
+
+    .title-and-description h2 {
+        font-size: 28px; /* Ajusta o tamanho do título para dispositivos menores */
+    }
+
+    .title-and-description p {
+        font-size: 14px; /* Ajusta o tamanho do parágrafo para dispositivos menores */
+    }
+
+    .small-image {
+        width: 30%; /* Ajusta a imagem para 50% da largura da tela */
+        margin-left: 35%; /* Remove o espaçamento da imagem */
+        margin-top: 15px; /* Adiciona espaçamento superior */
+    }
+}
+
+
+/* Estilo para as imagens e informações abaixo */
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.gallery-item {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.gallery-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .gallery-item {
+        width: 80%; /* Aumenta a largura das imagens */
+        margin-bottom: 20px; /* Adiciona espaçamento entre os itens */
+    }
+
+    .gallery-item h4 {
+        font-size: 16px; /* Ajusta o tamanho da fonte para o título */
+    }
+
+    .gallery-item p {
+        font-size: 12px; /* Ajusta o tamanho do parágrafo */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .activities-container {
+    padding: 20px 10px;
+  }
+
+  .title-section h2 {
+    font-size: 24px;
+  }
+
+  .title-section p {
+    font-size: 14px;
+  }
+
+  .icons-section {
+    grid-template-columns: 1fr; /* Uma coluna no celular */
+    gap: 20px;
+  }
+
+  .icon {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon h4 {
+    font-size: 16px;
+  }
+}
+
+/* Link para a página de atividades */
+.gallery-item a {
+    text-decoration: none;
+    color: inherit; /* Remove qualquer cor de texto do link */
+}
+
+/* Estilo para a seção de vídeo */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo cobrir toda a área da tela */
+    z-index: 1;
+    z-index: 1;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%; /* Posiciona a imagem no centro vertical */
+    left: 50%; /* Posiciona a imagem no centro horizontal */
+    transform: translate(-50%, -50%); /* Para centralizar a imagem de forma precisa */
+    opacity: 0.5; /* Define a opacidade da imagem */
+    z-index: 2;
+    width: 90%; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .video-section {
+        height: 200px; /* Reduz a altura do vídeo em telas menores */
+    }
+
+    .background-video {
+        object-fit: cover; /* Garante que o vídeo cubra toda a área da tela */
+        height: 100%; /* Assegura que o vídeo ocupe a altura total */
+    }
+
+    .overlay-image {
+        width: 100%; /* A imagem sobre o vídeo ocupa toda a largura */
+        height: auto; /* Ajusta a altura proporcionalmente */
+    }
+}
+/* Estilo geral para a seção */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.left-content {
+    width: 40%; /* Ajuste a largura do lado esquerdo */
+    color: white;
+}
+
+.left-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.left-content p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Efeito de zoom ao passar o cursor */
+.social-icon:hover {
+    transform: scale(1.1); /* Aplica o zoom de 10% */
+}
+
+.social-icon {
+    width: 40px; /* Ajuste o tamanho dos ícones */
+    height: 40px;
+}
+
+.right-content {
+    width: 55%; /* Ajuste a largura do lado direito */
+}
+
+.large-text {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.small-text {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Quadrado cobrindo a largura da tela */
+.content-section {
+    z-index: 2;
+    background-color: #878937; /* Cor do quadrado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px; /* Padding dentro do quadrado */
+}
+
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        padding: 20px; /* Reduz o padding */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%; /* Faz os elementos ocuparem 100% da largura */
+        margin-bottom: 20px; /* Espaço entre os dois lados */
+    }
+
+    .left-content h2 {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+
+    .large-text,
+    .small-text {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centraliza os ícones sociais */
+    }
+}
+

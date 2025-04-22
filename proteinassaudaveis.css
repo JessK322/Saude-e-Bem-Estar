@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    height: 700px; /* Altura fixa para simular o quadrado */
+    background-color: #878937;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .titulo {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 250px;
+    color: white;
+  }
+
+  .foto {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .foto img {
+    height: 500px;
+    border-radius: 8px;
+  }
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .info-texto {
+    flex: 1;
+  }
+  
+  .info-texto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-texto p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .info-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .bloco-informativo {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .titulo-principal {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .paragrafo-titulo{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .linha-separadora {
+    border: none;
+    border-top: 2px solid #000000;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  
+  .subtitulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .paragrafos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .coluna-esquerda,
+  .coluna-direita {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .coluna-esquerda p,
+  .coluna-direita p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  
+  .sessao-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #af6855; /* cor de fundo do bloco inteiro */
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card button {
+    padding: 10px 20px;
+    background-color: #878937;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #5f6023;
+  }
+  
+  @media (max-width: 768px) {
+    /* Ajusta o container para uma altura menor e melhor visualização em telas pequenas */
+    .container {
+      height: auto; /* Remove a altura fixa */
+      padding: 10px;
+    }
+  
+    /* Ajusta a logo */
+    .logo img {
+      width: 100%; /* Ajusta a logo para um tamanho menor */
+    }
+  
+    /* Ajusta a seção .bottom-section */
+    .bottom-section {
+      flex-direction: column; /* Alinha os itens na vertical */
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; /* Diminui o espaçamento inferior */
+    }
+  
+    .titulo {
+      font-size: 32px; /* Reduz o tamanho da fonte do título */
+      margin-bottom: 20px; /* Diminui o espaço abaixo do título */
+    }
+  
+    .foto img {
+      height: 200px; /* Reduz o tamanho da imagem para dispositivos móveis */
+    }
+  
+    /* Ajusta a .info-section */
+    .info-section {
+      flex-direction: column; /* Alinha os itens na vertical */
+      gap: 20px;
+    }
+    .info-imagem img{
+      height: 300px;
+    }
+    .info-texto {
+      flex: 1;
+      padding: 0;
+    }
+  
+    .info-texto h2 {
+      font-size: 20px; /* Ajusta o tamanho do título */
+    }
+  
+    .info-texto p {
+      font-size: 14px; /* Ajusta o tamanho do texto */
+    }
+  
+    /* Ajusta o bloco informativo */
+    .bloco-informativo {
+      padding: 0 10px;
+    }
+  
+    .titulo-principal {
+      font-size: 24px; /* Ajusta o título principal */
+    }
+  
+    .paragrafo-titulo {
+      font-size: 14px; /* Ajusta o tamanho do parágrafo título */
+    }
+  
+    /* Ajusta os cards */
+    .sessao-cards {
+      flex-direction: column; /* Coloca os cards em uma coluna */
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .card {
+      width: 90%; /* Ajusta o card para ocupar 90% da largura da tela */
+      max-width: 350px; /* Limita a largura máxima */
+      margin-bottom: 20px; /* Ajusta o espaçamento entre os cards */
+      padding: 15px; /* Diminui o padding dentro do card */
+    }
+  
+    .card h4 {
+      font-size: 16px; /* Ajusta o tamanho do título do card */
+    }
+  
+    .card p {
+      font-size: 12px; /* Ajusta o tamanho do texto no card */
+    }
+  
+    .card button {
+      width: 100%; /* Faz o botão ocupar toda a largura do card */
+      padding: 12px; /* Ajusta o padding do botão */
+    }
+  }

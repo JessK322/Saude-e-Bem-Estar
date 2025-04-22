@@ -1,0 +1,405 @@
+
+body {
+    display: flex;
+    flex-direction: column; /* <- ESSA LINHA RESOLVE */
+    justify-content: center;
+    align-items: center;
+  }
+
+.background-box {
+width: 100vw;
+background-color: #af6855;
+display: flex;
+justify-content: center;
+padding: 50px 0;
+box-sizing: border-box;
+}
+
+.content {
+display: flex;
+width: 80%;
+max-width: 1200px;
+gap: 40px;
+}
+
+.left img {
+height: 500px;
+width: auto;
+border-radius: 12px;
+box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.right {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* CENTRALIZA tudo */
+    justify-content: center;
+  }
+  .logo {
+    margin-bottom: 40px;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+
+  .logo img {
+    width: 450px;
+    max-width: 100%;
+    height: top;
+    cursor: pointer;
+    opacity: 0,9;
+    transition: transform 0.3s ease;
+  }
+
+  .icon-section {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+  }
+
+.icon-section i {
+font-size: 60px;
+margin-bottom: 10px;
+}
+
+.icon-section h1 {
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+.icon-section p {
+font-size: 20px;
+max-width: 450px;
+}
+.top-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza ícone, título e parágrafo */
+    text-align: center;
+  }
+  
+  .top-icon img {
+    width: 80px; /* ou o tamanho que preferir */
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  .background-box {
+    padding: 20px 0; /* Reduz o padding para celulares */
+  }
+
+  .content {
+    width: 50%; /* Aumenta a largura da content box para aproveitar melhor o espaço */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    gap: 20px; /* Ajusta o espaçamento entre as colunas */
+  }
+
+  .left img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Ajusta o arredondamento das bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajusta a sombra da imagem */
+  }
+
+  .right {
+    flex: 1;
+    text-align: center; /* Centraliza o texto */
+    padding: 0 20px; /* Adiciona um padding interno */
+  }
+
+  .logo img {
+    width: 300px; /* Ajusta o tamanho da logo para dispositivos móveis */
+    height: auto;
+  }
+
+  .icon-section {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .top-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .top-icon img {
+    width: 60px; /* Ajusta o tamanho do ícone */
+    height: auto;
+    margin-bottom: 10px; /* Ajusta o espaçamento */
+  }
+
+  .top-icon h1 {
+    font-size: 28px; /* Ajusta o tamanho do título */
+  }
+
+  .top-icon p {
+    font-size: 18px; /* Ajusta o tamanho do parágrafo */
+  }
+}
+  
+
+  .info-extra {
+    margin-top: 10%; /* distância do bloco de cima */
+    margin-bottom: 10%;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .info-extra h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .info-extra p {
+    font-size: 25px;
+    color: #000000;
+  }
+
+  
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  .info-extra {
+    margin-top: 5%; /* Reduz a margem superior */
+    margin-bottom: 5%; /* Reduz a margem inferior */
+    padding: 15px; /* Reduz o padding */
+    max-width: 100%; /* Garante que a seção ocupe toda a largura da tela */
+  }
+
+  .info-extra h2 {
+    font-size: 24px; /* Reduz o tamanho do título */
+    margin-bottom: 10px;
+  }
+
+  .info-extra p {
+    font-size: 18px; /* Reduz o tamanho do texto */
+  }
+}
+
+  .pontos-principais {
+    width: 100%; /* 100% da largura da tela */
+    background-color: #878937;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+  }
+  .pontos-principais h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 30px;
+    margin: 10px 0 5px;
+  }
+  
+  .card p {
+    font-size: 20px;
+  }
+
+  
+  .descricao-final {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .descricao-final h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+  
+  .descricao-final p {
+    font-size: 30px;
+    color: #000000;
+  }
+
+
+  /* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .descricao-final {
+    margin-top: 100px; /* Reduz a margem superior */
+    margin-bottom: 100px; /* Reduz a margem inferior */
+    padding: 15px; /* Diminui o padding */
+    max-width: 50%; /* Reduz a largura máxima */
+  }
+
+  .descricao-final h2 {
+    font-size: 28px; /* Reduz o tamanho do título */
+    margin-bottom: 20px; /* Reduz a margem inferior */
+  }
+
+  .descricao-final p {
+    font-size: 20px; /* Reduz o tamanho do texto */
+  }
+}
+  .logo-final {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo-final img {
+    width: 500px; /* ajuste conforme preferir */
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logo-final img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .logo-final img {
+    width: 80%; /* Ajusta a largura da imagem para 80% da tela */
+    max-width: 300px; /* Define um tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  .logo-final {
+    padding: 15px; /* Reduz o padding para melhor ajuste */
+  }
+}
+  .bloco-inferior {
+    background-color:   #af6855;
+    padding: 60px 20px;
+    margin-top: 60px;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  
+  .bloco-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* responsivo */
+  }
+  
+  .bloco-texto {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .bloco-texto h2 {
+    font-size: 40px;
+    margin-bottom: 65px;
+    color: #ffffff;
+  }
+  
+  .bloco-texto p {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+  
+  .botao-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #acacac;
+  }
+  
+  .bloco-imagem img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  
+
+  /* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .bloco-conteudo {
+    flex-direction: column; /* Coloca os elementos em coluna */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .bloco-texto {
+    width: 100%; /* Faz o texto ocupar toda a largura disponível */
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo do texto */
+  }
+
+  .bloco-texto h2 {
+    font-size: 30px; /* Reduz o tamanho do título */
+    margin-bottom: 20px; /* Reduz a margem do título */
+  }
+
+  .bloco-texto p {
+    font-size: 20px; /* Reduz o tamanho do parágrafo */
+    margin-bottom: 20px; /* Reduz a margem do parágrafo */
+  }
+
+  .bloco-imagem img {
+    width: 80%; /* Reduz a largura da imagem para 80% da tela */
+    max-width: 400px; /* Define um tamanho máximo para a imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+
+  .botao-voltar {
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+  }
+}
