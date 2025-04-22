@@ -65,6 +65,36 @@ body {
   .logo:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+    }
+  
+    .right-content {
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .left-photo{
+      width: 50%;
+    }
+    .logo {
+      width: 80%;
+    }
+  
+    h1 {
+      font-size: 2.5em;
+    }
+  
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+
   .conteudo-abaixo {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -85,6 +115,25 @@ body {
     line-height: 1.6;
     color: black;
   }
+
+
+  @media (max-width: 768px) {
+    .conteudo-abaixo {
+      padding: 30px 15px;
+    }
+  
+    .conteudo-abaixo h2 {
+      font-size: 1.5em;
+    }
+  
+    .conteudo-abaixo p {
+      font-size: 1em;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+
   .bloco-inferior {
     padding: 60px 20px;
     text-align: center;
@@ -143,6 +192,34 @@ body {
     font-size: 0.90em;
     color: #333;
   }
+
+  @media (max-width: 768px) {
+    .bloco-inferior {
+      padding: 40px 15px;
+    }
+  
+    .bloco-inferior h2 {
+      font-size: 1.6em;
+    }
+  
+    .bloco-inferior p {
+      font-size: 1em;
+      max-width: 100%;
+      padding: 0 5px;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 30%;
+    }
+  }
+
+
   .bloco-duplo {
     padding: 60px 20px;
     text-align: center;
@@ -197,6 +274,43 @@ body {
     font-size: 0.95em;
     color: #444;
   }
+
+
+  @media (max-width: 768px) {
+    .bloco-duplo {
+      padding: 40px 15px;
+    }
+  
+    .bloco-duplo h2 {
+      font-size: 1.5em;
+    }
+  
+    .bloco-duplo p {
+      font-size: 1em;
+      max-width: 100%;
+    }
+  
+    .duas-colunas {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .coluna {
+      max-width: 50%;
+    }
+  
+    .item {
+      padding: 15px;
+    }
+  
+    .item img {
+      height: auto;
+      width: 50%;
+      max-height: 200px;
+    }
+  }
+
   .quadrado-final {
     width: 100%;
     display: flex;
@@ -250,7 +364,34 @@ body {
   }
   
   
-
+  @media (max-width: 768px) {
+    .quadrado-final {
+      flex-direction: column;
+      padding: 100px 200px;
+      text-align: center;
+    }
+  
+    .lado-esquerdo, .lado-direito {
+      max-width: 100%;
+      padding: 20px 0;
+      align-items: center;
+    }
+  
+    .lado-esquerdo h2 {
+      font-size: 1.5em;
+    }
+  
+    .lado-esquerdo p,
+    .lado-esquerdo h5 {
+      font-size: 1em;
+    }
+  
+    .lado-direito img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
 
   /* Estilo para a seção de vídeo */
 .video-section {
@@ -281,6 +422,22 @@ body {
     width: 90%; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
 }
+
+@media (max-width: 768px) {
+  .video-section {
+    height: 200px; /* Diminui um pouco a altura para celular */
+  }
+
+  .overlay-image {
+    width: 100%;
+    opacity: 0.6; /* Um pouco mais visível se quiser */
+  }
+
+  .background-video {
+    object-fit: cover;
+  }
+}
+
 /* Estilo geral para a seção */
 .content-section {
     display: flex;
@@ -351,210 +508,36 @@ body {
 
 
 @media (max-width: 768px) {
-  /* Container principal */
-  .container {
-    flex-direction: column; /* Muda para coluna para melhor adaptação */
-    align-items: center; /* Centraliza os itens */
-    padding: 20px 10px;
-  }
-
-  /* Ajustando o layout da imagem à esquerda */
-  .left-photo {
-    width: 50%;
-    padding-bottom: 20px;
-  }
-
-  .left-photo img {
-    max-width: 50%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /* Ajustando o conteúdo à direita */
-  .right-content {
-    width: 100%; /* Deixa o conteúdo ocupar toda a largura */
-    text-align: center; /* Centraliza o texto */
-  }
-
-  /* Tamanho da logo */
-  .logo {
-    width: 50%; /* Diminui o tamanho da logo */
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }
-
-  h1 {
-    font-size: 2em; /* Ajusta o tamanho do título */
-    margin-right: 170px;
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 1.5em; /* Ajusta o tamanho da descrição */
-    max-width: 100%;
-    margin-right: 100px;
-  }
-
-  /* Conteúdo abaixo */
-  .conteudo-abaixo {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #ffffff;
-  }
-
-  .conteudo-abaixo h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    margin: auto;
-    margin-right: 10px;
-  }
-
-  .conteudo-abaixo p {
-    font-size: 1em;
-    margin: auto;
-    margin-right: 10px;
-
-  }
-
-  /* Bloco inferior */
-  .bloco-inferior {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-  }
-
-  .bloco-inferior h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-
-  .bloco-inferior p {
-    font-size: 1em;
-    margin-bottom: 30px;
-    max-width: 100%;
-  }
-
-  /* Cards responsivos */
-  .cards-container {
+  .content-section {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    padding: 30px 200px;
+    text-align: center;
   }
 
-  .card {
-    width: 90%; /* Cards ocupando mais espaço */
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-
-  .card img {
-    height: 200px; /* Ajuste na altura das imagens */
-  }
-
-  /* Bloco duplo */
-  .bloco-duplo {
-    padding: 40px 20px;
-  }
-
-  .bloco-duplo h2 {
-    font-size: 1.8em;
-  }
-
-  .bloco-duplo p {
-    font-size: 1em;
-    margin-bottom: 30px;
-  }
-
-  /* Duas colunas ajustadas */
-  .duas-colunas {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .coluna {
+  .left-content, .right-content {
     width: 100%;
-    max-width: 100%;
-  }
-
-  .item img {
-    height: 120px; /* Ajusta a altura da imagem nos itens */
-  }
-
-  /* Ajustes no quadrado final */
-  .quadrado-final {
-    flex-direction: column; /* Muda a direção para coluna */
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .lado-esquerdo {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .lado-direito {
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .lado-direito img {
-    width: 80%; /* Reduz a largura da imagem */
-    height: auto;
-  }
-
-  /* Seção de vídeo */
-  .video-section {
-    height: 200px; /* Reduz a altura do vídeo */
-  }
-
-  /* Overlay para o vídeo */
-  .overlay-image {
-    width: 80%; /* Ajusta o tamanho da imagem de sobreposição */
-  }
-
-  /* Seção de conteúdo */
-  .content-section {
-    flex-direction: column; /* Ajusta o conteúdo para coluna */
-    padding: 20px;
-    margin: auto;
-    margin-right: 10px;
-  }
-
-  .left-content {
-    width: 100%;
-    text-align: center;
+    padding: 10px 0;
   }
 
   .left-content h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .left-content p {
     font-size: 1em;
   }
 
-  /* Ajuste nos ícones sociais */
   .social-icons {
     justify-content: center;
-    gap: 10px;
-  }
-
-  .social-icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .right-content {
-    width: 100%;
-    text-align: center;
   }
 
   .large-text {
-    font-size: 1.5em;
+    font-size: 1.1em;
+    margin-bottom: 20px;
   }
 
   .small-text {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 }
